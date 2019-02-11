@@ -39,11 +39,11 @@ export const saveResult = ( res ) => {
 }
 
 export const storeResult = ( res ) => {
-    return dispatch => {
-        setTimeout( () => {
-            dispatch(saveResult(res));
-        }, 2000 );
-    }
+  return dispatch => { 
+    setTimeout(() => {
+      dispatch(saveResult(res))
+    }, 2000);
+  }
 };
 
 export const deleteResult = ( resElId ) => {
