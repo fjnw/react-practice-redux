@@ -1,5 +1,5 @@
 
-import * as actionTypes from '../actions/actions';
+import * as actionTypes from '../actions/actionTypes';
 
 const initialState = {
   results: []
@@ -9,6 +9,7 @@ const initialState = {
 const reducer = (state = initialState, action) => {
   switch ( action.type) {
     case actionTypes.STORE_RESULT:
+      console.log(3)
       return {
         ...state,
         // results: state.results.push() // cannot use because .push because it manipultes the origional results in origional state
